@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/colores.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./fondo.css">
+    <title>Promgramas js</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-start  ">
+    <div class="row  my-5">
+        <div class="card text-center bg-danger text-white">
+            <div class="card-header">
+                NOTA FINAL
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center flex-column">
+                    <div class="col ">
+                        <label for="num1" class="form-label">Nota 1: 30%</label>
+                        <input type="number" class="form-control" id="num1" >
+                    </div>
+                    <div class="col">
+                        <label for="nota2" class="form-label">Nota 2: 70%</label>
+                        <input type="number" class="form-control" id="num2">
+                    </div>
+                    <div  class="col g-md-2">
+                        <button class="btn btn-primary btn-lg m-4" onclick="Nota()">calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                resultado: <p id="res" ></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row  my-5 m-4">
+        <div class="card text-center bg-primary text-white">
+            <div class="card-header">
+              PESO
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center flex-column">
+                    <div class="col ">
+                        <label for="altura" class="form-label">Altura 1</label>
+                        <input type="number" class="form-control" id="altura" >
+                    </div>
+                    <div class="col">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="edad">
+                    </div>
+                    <div class="col">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <input type="text" class="form-control" id="sexo">
+                    </div>
+                    <div class="col">
+                        <label for="peso actual" class="form-label">Peso Actual</label>
+                        <input type="number" class="form-control" id="pesoA">
+                    </div>
+                    <div  class="col g-md-2">
+                        <button class="btn btn-light btn-lg m-2" onclick="PromedioPeso()">calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                resultado: <p id="caluPeso" ></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row  my-5">
+        <div class="card text-center bg-success text-white">
+            <div class="card-header">
+                NUMERO MAYOR
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center flex-column">
+                    <div class="col ">
+                        <label for="n1" class="form-label">Numero 1</label>
+                        <input type="text" class="form-control" id="n1" >
+                    </div>
+                    <div class="col">
+                        <label for="n2" class="form-label">Numero 2</label>
+                        <input type="text" class="form-control" id="n2">
+                    </div>
+                    <div class="col">
+                        <label for="n2" class="form-label">Numero 3</label>
+                        <input type="text" class="form-control" id="n3">
+                    </div>
+                    <div  class="col g-md-2">
+                        <button class="btn btn-light btn-lg m-4" onclick="Mayor()">calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                resultado: <p id="numMay" ></p>
+            </div>
+        </div>
+    </div>
+    </div>
+<hr>
+    <div class="container d-flex justify-content-center align-items-start  ">
+        <div class="row  my-5">
+            <div class="card text-center bg-dark text-white">
+                <div class="card-header">
+                    CALCULADORA
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-center flex-column">
+                        <div class="col ">
+                            <label for="num1" class="form-label">Numero 1</label>
+                            <input type="number" class="form-control" id="nc1" >
+                        </div>
+                        <div class="col">
+                            <label for="nota2" class="form-label">Numero 2</label>
+                            <input type="number" class="form-control" id="nc2">
+                        </div>
+                        <div  class="col g-md-2 btn-group" role="group" aria-label="basic mixed styles example">
+                            <button class="btn btn-primary btn-lg m-4" onclick="CalculadoraS()">sumar</button>
+                            <button class="btn btn-primary btn-lg m-4" onclick="CalculadoraR()">restar</button>
+                            <button class="btn btn-primary btn-lg m-4" onclick="CalculadoraM()">multiplicar</button>
+                            <button class="btn btn-primary btn-lg m-4" onclick="CalculadoraD()">dividir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    resultado: <p id="resulCalculadora" ></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row  my-5 m-4">
+            <div class="card text-center bg-info ">
+                <div class="card-header">
+                CELSIUS A FAHRENHEIT
+                </div>
+                <div class="card-body">
+                    <h6>ingresa un numero en °C O °F</h6>
+                    <div class="d-flex justify-content-center flex-column">
+                        <div class="col ">
+                            <label for="cel" class="form-label">Ingrese dato en CELSIUS</label>
+                            <input type="number" class="form-control" id="celcius" >
+                        </div>
+                        <div class="col ">
+                            <label for="cel" class="form-label">Ingrese dato en FAHRENHEIT</label>
+                            <input type="number" class="form-control" id="fahrenheit" >
+                        </div>
+                        <div  class="col g-md-2 btn-group">
+                            <button class="btn btn-light btn-lg m-2" onclick="TemperaturaC()">calcular °C</button>
+                            <button class="btn btn-light btn-lg m-2" onclick="TemperaturaF()">calcular F°</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    resultado: <p id="rCel"></p>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-start  ">
+        <div class="card">
+            <div class="card-header">
+                CONTAR 10 NUMEROS ENTEROS
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <p id="dato1" ></p></li>
+                <li class="list-group-item"> <p id="dato2" ></p></li>
+                <li class="list-group-item"> <p id="dato3" ></p></li>
+                <li class="list-group-item"> <p id="dato4" ></p></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                CONTAR 10 NUMEROS ENTEROS
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <p id="valor1" ></p></li>
+                <li class="list-group-item"> <p id="valor2" ></p></li>
+                <li class="list-group-item"> <p id="valor3" ></p></li>
+                <li class="list-group-item"> <p id="valor4" ></p></li>
+            </ul>
+        </div>
+    </div>
+
+        
+    <script src="./programasjs.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="./js/all.min.js"></script>
+</body>
+</html>

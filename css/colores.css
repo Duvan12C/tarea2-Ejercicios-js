@@ -1,0 +1,64 @@
+:root{
+    --bs-naranja_4 : #d43e24;
+}
+
+.color1{
+    background-color: #f6c72a;
+}
+
+.color2{
+    background-color: #d6880f;
+}
+
+.color3{
+    background-color: #eb7b33;
+}
+
+.color4{
+    background-color: #d43e24;
+}
+
+.color5{
+    background-color: #fd2da4;
+}
+
+.color6{
+    background-color: #fa291c;
+}
+
+.fondo1{
+    background-color: #ffa71c;
+}
+
+.fondo2{
+    background-color: #ff6f29;
+}
+
+.fondo3{
+    background-color: #e87c1a;
+}
+
+.fondo4{
+    background-color: #e8401a;
+}
+
+.fondo5{
+    background-color: #ff261c;
+}
+
+.fondo6{
+    background-color: #fbfcf4;
+}
+
+
+.fopacy{
+    background-color: rgba(255,167,28,0.5);
+}
+
+.footer{
+    height: 150px;
+}
+
+.card{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
